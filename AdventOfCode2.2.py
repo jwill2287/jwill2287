@@ -23,10 +23,10 @@ for value in instructionsList:
     b = []
     i = 1
     j = 0
-    
+
     #splits the direction instruction from the number instruction into list a
     a = instructionsList[index].split()
-    
+
     #appends the number portion of the instruction into list b as an integer
     b.append(int(a[i]))
 
