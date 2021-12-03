@@ -22,6 +22,9 @@ for line in file:
 while i < len(b):
     
     index = 0
+    countOne = 0
+    countZero = 0
+    bit = 0
 
     for value in b:
         a = (b[index])
@@ -57,4 +60,4 @@ while i < len(b):
         else:
             index += 1
 
-print(b)       
+    print(b)     
