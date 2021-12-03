@@ -15,15 +15,22 @@ instructionsList = []
 for line in file:
     instructionsList.append(line)
 
-#loops through the instructionsList list, splits the direction from the number inside of a, appends the number into b as an integer, checks the direction value, runs appropriate calculation according to the direction given
+#loops through the instructionsList list checks the direction value
 for value in instructionsList:
+    
+    #delcaring local variables and lists
     a = []
     b = []
     i = 1
     j = 0
+    
+    #splits the direction instruction from the number instruction into list a
     a = instructionsList[index].split()
+    
+    #appends the number portion of the instruction into list b as an integer
     b.append(int(a[i]))
 
+    #checks direction instruction from list a and runs corresponding calcuation on the instruction number in list b
     if a[0] == "forward":
         horizontalPosition += b[j]
         depth += (aim * b[j])
@@ -36,10 +43,13 @@ for value in instructionsList:
 
     index += 1
 
-#
+#calculating the desire answer
 horizontalPostionByDepth = horizontalPosition * depth
 
+#printing values for fun
 print(aim)
 print(depth)
 print(horizontalPosition)
+
+
 print(horizontalPostionByDepth)
