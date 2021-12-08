@@ -249,7 +249,6 @@ for line in file:
     while index4 < len(outputValues):
 
         x = len(outputValues[index4])
-        letterIndex = 0
 
         if x == 2:
 
